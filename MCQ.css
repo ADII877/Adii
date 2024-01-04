@@ -1,0 +1,192 @@
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    .nav{
+        position: fixed;
+        display: flex;
+        width: 100%;
+
+        justify-content: space-between;
+    }
+    .nav::before{
+        content: " ";
+        position: absolute;
+        background-color: rgb(31, 31, 50);
+        height: 100%;
+        width: 100%;
+
+       z-index: -1;
+    }
+    .logo{
+        display: flex;
+    }
+    .nav img{
+        height: 4rem;
+    }
+    .logoname{
+        position: relative;
+        left: 10px;
+        font-family:'Seymour One';
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+    .nav ul{
+        padding-right: 11rem;
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    .nav ul li{
+        position: relative;
+        padding: 1em;
+        list-style: none;
+
+    }
+    .nav ul li a{
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        font-size: 1.3rem;
+        padding: 20px;
+        text-decoration: none;
+        transition:all 0.3s;
+    }
+    .nav ul li a:hover{
+        color: rgb(138, 157, 245);
+    }
+  
+    .dropdown{
+        display: none;
+        z-index: 1;
+    }
+    .nav ul li:hover .dropdown{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: rgb(31, 31, 50);
+    }
+    .nav ul li:hover .dropdown ul{
+        display: block;
+        margin-right: -100px;
+    }
+    .nav ul li:hover .dropdown ul li{
+        width: 150px;
+        padding: 10px;
+    }
+    .leftcontent{
+        position: relative;
+        z-index: -1;
+       
+    }  
+    .leftcontent::before{ 
+        content: " ";
+        position: absolute;
+        width: 20%;
+        height:40rem;
+        background-color: cadetblue;
+        z-index: -1;
+        opacity: .5;
+        
+    }
+    .leftcontent h4{
+        padding: 90px 0 20px 20px;
+    }
+    .leftcontent ul{
+        padding:0px 40px;
+        position: relative;   
+    }
+    .leftcontent ul li{
+        padding: 3px;
+    }
+    .midcontent{
+        /* border: 2px solid red;    */
+        height: 29rem;
+        width: 50rem;
+        position: absolute;
+        top: 6rem;
+        left: 20rem;
+        z-index: -1;
+    }
+    .midcontent h2{
+        margin: 2px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(71, 92, 113);
+    }
+    .midcontent p{
+        font-size: 20px;
+        padding: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } 
+    @media only screen and (max-width: 768px) {
+        .nav ul {
+            display: none;  /*Hide the navigation links on small screens */
+        }
+    
+        .nav.active ul {
+             display: flex; /*Display the navigation links when the menu is active */
+            flex-direction: column;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            background-color: rgb(31, 31, 50);
+            z-index: 1;
+        }
+    
+        .nav.active ul li {
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .nav.active ul li a {
+            font-size: 1rem;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+    
+        .nav.active ul li a:hover {
+            color: rgb(138, 157, 245);
+        }
+    
+        .logo img {
+            display: none; /*Hide the logo on small screens */
+        }
+    
+        .logoname {
+            font-size: 18px;
+        }
+        
+        .leftcontent{
+            position: relative;
+            top: 5rem;
+        }
+        .leftcontent::before {
+            width: 100%;
+            height: 10rem;
+        }
+    
+        .leftcontent h4 {
+            padding: 10px;
+        }
+    
+        .leftcontent ul {
+            padding: 10px;
+        }
+    
+        .midcontent {
+            position: relative;
+            top: 5rem;
+            left: 1rem;
+            width: 100%;
+            margin: 0;
+        }
+    }
