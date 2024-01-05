@@ -196,7 +196,11 @@
         height: 200px;
     }
 
-    @media only screen and (max-width: 600px) and (max-height: 80px) {
+    @media only screen and (max-width: 80px) and (max-height: 500px) {
+        .nav{
+            background-color: rgb(31, 31, 50);
+            width: 15rem;
+        }
         .nav ul {
             display: none;
         }
@@ -231,17 +235,15 @@
             color: rgb(138, 157, 245);
         }
 
-        .logo img {
-            
-        }
-
         .logoname {
             font-size: 18px;
+            
         }
 
         .leftcontent {
             position: relative;
             top: 4rem;
+            width: 15rem;
             height: 12rem;
         }
 
@@ -252,27 +254,51 @@
 
         .leftcontent h4 {
             padding: 8px;
+            font-size: 20px;
         }
 
         .leftcontent ul {
             display: flex;
             padding: 10px;
         }
-
+        #java img{
+            margin-bottom: 10px;
+            height: 30px;
+            width: 30px;
+        }
+        .leftcontent ul li a img{
+            margin-bottom: 10px;
+            height: 30px;
+            width: 30px;
+        }
+        .leftcontent ul li a{
+            font-size: 20px;
+            padding-top: 10px;
+            padding-left: 0;
+        }
         .midcontent {
             position: relative;
-            top: 0rem;
+            top: 2rem;
             left: 0rem;
-            width: 100%;
+            width: 15rem;
             height: 100%;
             margin: 0;
+        }
+        #pro{
+            padding: 10px;
+        }
+        #pro h2 li{
+            font-size: 18px;
+        }
+        #pro p{
+            font-size: 9px;
         }
         footer {
             position: absolute;
             z-index: -1;
-            top: 70rem;
+            top: 43rem;
             background-color: #213343;
-            width: 100%;
-            height: 200px;
+            width: 15rem;
+            height: 100%;
     }
 }
