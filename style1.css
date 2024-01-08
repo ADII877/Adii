@@ -47,13 +47,15 @@
     .nav ul {
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+        right: 1rem;
         list-style: none;
         align-items: center;
     }
 
     .nav ul li {
         position: relative;
-        padding-right: 20px;
+        padding-right: 5px;
         list-style: none;
 
     }
@@ -107,28 +109,52 @@
         }
 
         .logo img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .logoname {
+            font-size: 15px;
+        }
+
+        .nav ul li a {
+            padding: 10px;
+            font-size: 13px;
+        }
+    }
+    @media (max-width:400px) {
+        .nav {
+            height: 45px;
+        }
+
+        .nav ul {
+            left: 0 ;
+            display: flex;
+        }
+
+        .logo img {
             height: 25px;
             width: 25px;
         }
 
         .logoname {
-            font-size: 10px;
+            font-size: 8px;
         }
 
         .nav ul li a {
-            padding: 2px;
-            font-size: 9px;
+            padding: 1px;
+            font-size: 6px;
         }
     }
 
-    @media (max-width:300px) {
+    @media (max-width:200px) {
         .nav ul {
             display: none;
         }
 
         #menu {
             display: block;
-            font-size: 35vw;
+            font-size: 30vw;
         }
 
     }
