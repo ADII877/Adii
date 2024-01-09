@@ -360,13 +360,13 @@ footer {
 
     .midcontent h2 {
         margin: 1px;
-        font-size: 6vw;
+        font-size: 8vw;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: rgb(71, 92, 113);
     }
 
     .midcontent p {
-        font-size: 3VW;
+        font-size: 6VW;
         padding: 10px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
